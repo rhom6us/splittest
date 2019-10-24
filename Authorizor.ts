@@ -3,6 +3,7 @@ import { AuthorizatioInfo } from ".";
 import fetch, {Response} from 'node-fetch';
 import {alert} from '../utils';
 
+// a change
 export class Authorizor {
   constructor(private base: URL = new URL('https://api.real-debrid.com/oauth/v2/')) { }
   async code({ client_id }: Pick<AuthorizatioInfo, 'client_id'>) {
